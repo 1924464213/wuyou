@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无忧找回</title>
+    <link rel="stylesheet" href="./css/zhaohuimima.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="###"><img src="./image/index/logo.jpg" alt=""></a>
+        </div>
+        <div class="nav_app">
+            <a href="###"><img src="./image/index/my.jpg" alt=""></a>
+            <a href="###"><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </nav>
+    <section class="top">
+        <p>
+            <span>首页</span> > 找回密码
+        </p>
+    </section>
+    <section class="bottom">
+        <ul>
+            <li>
+                <input type="text" placeholder="请输入手机号">
+                <button id="code">发送验证码</button>
+            </li>
+            <li>
+                <input type="text" placeholder="请输入短信验证码">
+            </li>
+            <li>
+                <input type="text" placeholder="请输入新的密码">
+            </li>
+            <li>
+                <input type="password" placeholder="再次输入新的密码">
+            </li>
+        </ul>
+        <div>提 交</div>
+    </section>
+</body>
+
+</html>
+<script src="./js/rem.js"></script>
+<script>
+
+    var code = document.getElementById("code");
+
+    var timer;
+    code.onclick = function () {
+        code.disabled = true;
+        var num = 10;
+        auto();
+        var timer = setInterval(auto, 1000);
+        function auto() {
+            num--;
+            code.innerHTML = `${num}秒重发`;
+            if (num <= 0) {
+                code.disabled = false;
+                clearInterval(timer)
+                code.innerHTML = '重新获取';
+
+            }
+        }
+    }
+
+</script>

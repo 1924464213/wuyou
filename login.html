@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆无忧</title>
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="index.html"><img src="./image/index/logo.jpg" alt=""></a>
+        </div>
+        <div class="nav_app">
+            <a href="./nologin.html"><img src="./image/index/my.jpg" alt=""></a>
+            <a href="###"><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </nav>
+    <section class="top">
+        <p>
+            <a href="index.html">首页</a> > <a href="nologin.html">我的</a> > 登录
+        </p>
+    </section>
+    <ul class="way">
+        <li class="pitch on">账号登录</li>
+        <li class="pitch ">快捷登录</li>
+    </ul>
+    <section class="login">
+
+        <ul class="center">
+            <li>
+                <input type="number" placeholder="请输入手机号码">
+                <!-- <a href="##">发送验证码</a> -->
+            </li>
+            <li>
+                <input type="password" placeholder="请输入密码">
+            </li>
+        </ul>
+
+        <div class="down">
+            <a href="user.html" id="atone">立即登录</a>
+        </div>
+    </section>
+    <section class="login un">
+
+        <ul class="center">
+            <li>
+                <input type="number" placeholder="请输入手机号码">
+                <a href="##" id="code">发送验证码</a>
+            </li>
+            <li>
+                <input type="password" placeholder="请输入短信验证码">
+            </li>
+        </ul>
+
+        <div class="down">
+            <a href="user.html" id="atone">验证并登录</a>
+        </div>
+    </section>
+
+    <div class="word">
+        <p><a href="##">立即注册</a></p>
+        <p><a href="##">忘记密码</a></p>
+    </div>
+</body>
+
+</html>
+<script src="./js/rem.js"></script>
+<script>
+    var code = document.getElementById("code");
+    var timer;
+    code.onclick = function () {
+        code.disabled = true;
+        var num = 10;
+        auto();
+        var timer = setInterval(auto, 1000);
+        function auto() {
+            num--;
+            code.innerHTML = `${num}秒重发`;
+            if (num <= 0) {
+                code.disabled = false;
+                clearInterval(timer)
+                code.innerHTML = '重新获取';
+
+            }
+        }
+    }
+
+</script>
