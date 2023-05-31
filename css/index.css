@@ -2,12 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 10px;
+}
+
 li {
   list-style: none;
 }
+
 body {
   background-color: #f6f6f6;
 }
+
 nav {
   background-color: #ff8a00;
   width: 100%;
@@ -16,21 +23,25 @@ nav {
   justify-content: space-around;
   flex-direction: row;
 }
-nav > div {
+
+nav>div {
   display: flex;
   align-items: center;
 }
-.nav_logo > a,
-.nav_logo > a > img {
+
+.nav_logo>a,
+.nav_logo>a>img {
   width: 12rem;
   height: 4rem;
 }
-.nav_app > a,
-.nav_app > a > img {
+
+.nav_app>a,
+.nav_app>a>img {
   width: 2.6rem;
   height: 3.4rem;
   margin-left: 1.5rem;
 }
+
 header {
   width: 100%;
   height: 26.4rem;
@@ -38,7 +49,8 @@ header {
   background-size: contain;
   position: relative;
 }
-header > .search > input {
+
+header>.search>input {
   width: 88%;
   height: 3.8rem;
   position: absolute;
@@ -47,7 +59,8 @@ header > .search > input {
   text-indent: 3rem;
   border-radius: 0.6rem;
 }
-header > .search > span {
+
+header>.search>span {
   background: url(../image/index/seach.jpg);
   background-size: cover;
   z-index: 2;
@@ -59,21 +72,25 @@ header > .search > span {
   box-shadow: inset 3px 3px rgba(254, 254, 254, 0.39),
     3px 3px rgba(254, 254, 254, 0.39);
 }
+
 .banner {
   width: 100%;
   height: 12.5rem;
   background-color: #ff8a00;
 }
-.banner > ul {
+
+.banner>ul {
   font-size: 1.6rem;
   /* color: white; */
   display: flex;
   justify-content: space-around;
 }
-.banner > ul > li {
+
+.banner>ul>li {
   margin-top: 1.8rem;
 }
-.banner > ul > li > a {
+
+.banner>ul>li>a {
   color: white;
   width: 6.5rem;
   height: 6rem;
@@ -83,19 +100,23 @@ header > .search > span {
   text-align: center;
   text-decoration: none;
 }
-.banner > ul > li:nth-of-type(1) {
+
+.banner>ul>li:nth-of-type(1) {
   background: url(../image/index/index_03.png) no-repeat;
   background-size: contain;
 }
-.banner > ul > li:nth-of-type(2) {
+
+.banner>ul>li:nth-of-type(2) {
   background: url(../image/index/index_05.png) no-repeat;
   background-size: contain;
 }
-.banner > ul > li:nth-of-type(3) {
+
+.banner>ul>li:nth-of-type(3) {
   background: url(../image/index/index_07.png) no-repeat;
   background-size: contain;
 }
-.banner > ul > li:nth-of-type(4) {
+
+.banner>ul>li:nth-of-type(4) {
   background: url(../image/index/index_09.png) no-repeat;
   background-size: contain;
 }
@@ -104,7 +125,8 @@ header > .search > span {
   padding: 1rem 0;
   background-color: #f5f5f5;
 }
-.new02 > img {
+
+.new02>img {
   width: 100%;
 }
 
@@ -115,6 +137,7 @@ header > .search > span {
 
   margin-bottom: 0.8rem;
 }
+
 .hot {
   width: 100%;
   height: 7rem;
@@ -123,73 +146,86 @@ header > .search > span {
   background-color: #ff8a00;
   color: white;
 }
-.hot > .hothouse {
+
+.hot>.hothouse {
   height: 5rem;
   width: 50%;
   margin-left: 2rem;
   padding: 1rem 0;
 }
-.hot > .hothouse > h3 {
+
+.hot>.hothouse>h3 {
   font-size: 2.4rem;
 }
-.hot > .hothouse > p {
+
+.hot>.hothouse>p {
   font-size: 1.6rem;
   font-weight: 600;
 }
-.house > ul {
+
+.house>ul {
   width: 90%;
 
   margin: 0 auto;
 }
-.house > ul > li {
+
+.house>ul>li {
   width: 100%;
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.house > ul > li:nth-of-type(2) {
+
+.house>ul>li:nth-of-type(2) {
   border-top: 0.1rem solid #ff0000;
   border-bottom: 0.1rem solid #ff0000;
 }
 
-.house > ul > li > .hotimg {
+.house>ul>li>.hotimg {
   width: 11rem;
   height: 11rem;
 }
-.house > ul > li > .hotimg > img {
+
+.house>ul>li>.hotimg>img {
   width: 10rem;
   height: 10rem;
   margin: 0.5rem 0.5rem;
 }
+
 .size {
   width: 60%;
   /* height: ; */
 }
-.size > h2 {
+
+.size>h2 {
   font-size: 2rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.size > p {
+
+.size>p {
   font-size: 1.6rem;
   padding: 0.5rem 0;
   color: #949494;
 }
-.size > p > span {
+
+.size>p>span {
   float: right;
   margin-right: 1rem;
 }
-.size > p:first-of-type {
+
+.size>p:first-of-type {
   color: #3d3d3d;
 }
-.size > p:first-of-type > span {
+
+.size>p:first-of-type>span {
   color: #ff8a00;
   font-weight: 600;
 }
 
-.size > p > a {
+.size>p>a {
   text-decoration: none;
   padding: 0.3rem 0.3rem;
   margin-right: 0.5rem;
@@ -197,18 +233,22 @@ header > .search > span {
   color: rgb(50, 119, 151);
   font-size: 1.2rem;
 }
+
 .hotattention {
   width: 100%;
   height: 23rem;
   background-color: #ffffff;
 }
+
 .hottop {
   display: flex;
 }
-.hottop > p:nth-of-type(2) {
+
+.hottop>p:nth-of-type(2) {
   color: #666666;
 }
-.hottop > p {
+
+.hottop>p {
   width: 50%;
   height: 4rem;
   line-height: 4rem;
@@ -219,37 +259,44 @@ header > .search > span {
   text-align: center;
 }
 
-.hottop > p:nth-of-type(1) {
+.hottop>p:nth-of-type(1) {
   border-bottom: 0.2rem solid #ff8a00;
 }
+
 .sort {
   display: flex;
 }
-.sort > ul {
+
+.sort>ul {
   width: 50%;
   margin-top: 1rem;
 }
-.sort > ul > li {
+
+.sort>ul>li {
   text-indent: 3em;
   height: 3.5rem;
   line-height: 3.5rem;
 }
-.sort > ul > li > a {
+
+.sort>ul>li>a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #666666;
 }
+
 footer {
   width: 100%;
 
   background-color: #2f3130;
 }
-footer > div {
+
+footer>div {
   width: 90%;
   height: 20rem;
   margin: 0 auto;
 }
-footer > div > p {
+
+footer>div>p {
   font-size: 1.8rem;
   color: #969897;
   height: 5rem;
@@ -257,12 +304,14 @@ footer > div > p {
   border-bottom: 0.1rem solid #454746;
   font-weight: 600;
 }
-footer > div > p > a {
+
+footer>div>p>a {
   color: #969897;
   text-decoration: none;
   font-weight: 600;
 }
-footer > div > ul {
+
+footer>div>ul {
   width: 100%;
   height: 6rem;
   margin-top: 2rem;
@@ -270,21 +319,25 @@ footer > div > ul {
   display: flex;
   justify-content: center;
 }
-footer > div > ul > li {
+
+footer>div>ul>li {
   width: 50%;
   margin-left: 3rem;
   display: flex;
 }
-footer > div > ul > li > img {
+
+footer>div>ul>li>img {
   width: 2.8rem;
   height: 2.8rem;
   margin: 0 1rem;
 }
-footer > div > div {
+
+footer>div>div {
   text-align: center;
   color: #888888;
   font-size: 1.6rem;
 }
+
 .closedown {
   width: 100%;
   height: 5rem;
@@ -296,43 +349,49 @@ footer > div > div {
 
   display: flex;
 }
-.closedown > img {
+
+.closedown>img {
   width: 2rem;
   height: 2rem;
   position: absolute;
   top: 0;
   left: 0;
 }
-.closedown > .center {
+
+.closedown>.center {
   display: flex;
   justify-content: space-around;
   flex: 6;
   font-size: 1.2rem;
   color: #fff;
 }
-.closedown > .center > div > img {
+
+.closedown>.center>div>img {
   width: 4rem;
   height: 4rem;
   margin-top: 0.5rem;
 }
+
 .right {
   height: 5rem;
   line-height: 5rem;
   /* display: flex; */
 }
 
-.right > P {
+.right>P {
   height: 2.4rem;
   line-height: 2.6rem;
 }
-.closedown > div:last-of-type {
+
+.closedown>div:last-of-type {
   background-color: #ff8a00;
   width: 30%;
   line-height: 5rem;
   font-size: 1.6rem;
   text-align: center;
 }
-.closedown > div:last-of-type > a {
+
+.closedown>div:last-of-type>a {
   text-decoration: none;
   color: white;
 }

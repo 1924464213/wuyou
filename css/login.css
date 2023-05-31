@@ -2,15 +2,23 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 10px;
+}
+
 li {
   list-style: none;
 }
+
 body {
   background-color: #f6f6f6;
 }
+
 a {
   text-decoration: none;
 }
+
 nav {
   background-color: #ff8a00;
   width: 100%;
@@ -19,21 +27,25 @@ nav {
   justify-content: space-around;
   flex-direction: row;
 }
-nav > div {
+
+nav>div {
   display: flex;
   align-items: center;
 }
-.nav_logo > a,
-.nav_logo > a > img {
+
+.nav_logo>a,
+.nav_logo>a>img {
   width: 12rem;
   height: 4rem;
 }
-.nav_app > a,
-.nav_app > a > img {
+
+.nav_app>a,
+.nav_app>a>img {
   width: 2.6rem;
   height: 3.4rem;
   margin-left: 1.5rem;
 }
+
 .top {
   width: 100%;
   height: 4rem;
@@ -44,10 +56,12 @@ nav > div {
   background-color: white;
   border-bottom: 0.1rem solid #d1d1d1;
 }
-.top > p > a {
+
+.top>p>a {
   color: #3f4340;
 }
-.top > p > a:nth-of-type(1) {
+
+.top>p>a:nth-of-type(1) {
   font-weight: 600;
 }
 
@@ -55,13 +69,15 @@ nav > div {
   width: 100%;
   border-top: 0.1rem solid #d8d8d8;
 }
+
 .way {
   width: 100%;
   height: 5rem;
   display: flex;
   background-color: #ffffff;
 }
-.way > li {
+
+.way>li {
   width: 50%;
   height: 5rem;
   line-height: 5rem;
@@ -69,7 +85,8 @@ nav > div {
   font-size: 1.6rem;
   border-bottom: 0.4rem solid #d1d1d1;
 }
-.way > .on {
+
+.way>.on {
   border-bottom: 0.4rem solid #ff8a00;
 }
 
@@ -77,10 +94,11 @@ nav > div {
   margin-top: 0.4rem;
 }
 
-.center > li:first-of-type {
+.center>li:first-of-type {
   position: relative;
 }
-.center > li:first-of-type > a {
+
+.center>li:first-of-type>a {
   position: absolute;
   right: 0.5rem;
   top: 0.7rem;
@@ -93,7 +111,7 @@ nav > div {
   color: #797979;
 }
 
-.center > li > input {
+.center>li>input {
   border: none;
   outline: none;
   width: 100%;
@@ -102,14 +120,17 @@ nav > div {
   padding-left: 2rem;
   box-sizing: border-box;
 }
-.center > li {
+
+.center>li {
   border-bottom: 0.1rem solid #d8d8d8;
 }
+
 .down {
   width: 90%;
   margin: 0 auto;
   margin-top: 1.5rem;
 }
+
 #atone {
   display: block;
   width: 80%;
@@ -133,10 +154,12 @@ nav > div {
   display: flex;
   justify-content: space-between;
 }
+
 .word a {
   color: #989898;
   font-size: 1.4rem;
 }
-.word > p:first-of-type > a {
+
+.word>p:first-of-type>a {
   color: #ff8a00;
 }

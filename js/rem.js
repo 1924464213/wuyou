@@ -1,7 +1,7 @@
 function setRem() {
     var wwidth = 375;
     var clientw = document.documentElement.clientWidth || document.body.clientWidth
-    var html = document.querySelector('html')
+    var html = document.querySelector('html');
     html.style.fontSize = (clientw / wwidth) * 10 + 'px'
 }
 window.onresize = setRem

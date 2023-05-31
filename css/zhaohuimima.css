@@ -2,15 +2,23 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 10px;
+}
+
 li {
   list-style: none;
 }
+
 body {
   background-color: #f6f6f6;
 }
+
 a {
   text-decoration: none;
 }
+
 nav {
   background-color: #ff8a00;
   width: 100%;
@@ -19,21 +27,25 @@ nav {
   justify-content: space-around;
   flex-direction: row;
 }
-nav > div {
+
+nav>div {
   display: flex;
   align-items: center;
 }
-.nav_logo > a,
-.nav_logo > a > img {
+
+.nav_logo>a,
+.nav_logo>a>img {
   width: 12rem;
   height: 4rem;
 }
-.nav_app > a,
-.nav_app > a > img {
+
+.nav_app>a,
+.nav_app>a>img {
   width: 2.6rem;
   height: 3.4rem;
   margin-left: 1.5rem;
 }
+
 .top {
   width: 100%;
   height: 4rem;
@@ -42,14 +54,17 @@ nav > div {
   box-sizing: border-box;
   font-size: 1.6rem;
 }
-.top > p > span {
+
+.top>p>span {
   font-weight: 600;
 }
-.bottom > ul > li {
+
+.bottom>ul>li {
   height: 4.6rem;
   border-bottom: 1px solid #d1d1d1;
 }
-.bottom > ul > li > input {
+
+.bottom>ul>li>input {
   border: none;
   outline: none;
   width: 100%;
@@ -58,7 +73,8 @@ nav > div {
   padding-left: 2rem;
   box-sizing: border-box;
 }
-.bottom > div {
+
+.bottom>div {
   width: 80%;
   height: 5rem;
   line-height: 5rem;
@@ -69,10 +85,12 @@ nav > div {
 
   font-size: 2.6rem;
 }
-.bottom > ul > li:first-of-type {
+
+.bottom>ul>li:first-of-type {
   position: relative;
 }
-.bottom > ul > li > button {
+
+.bottom>ul>li>button {
   position: absolute;
   right: 0.5rem;
   top: 0.7rem;
