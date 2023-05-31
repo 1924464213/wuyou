@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+header {
+  height: 5rem;
+  background: #ff8a00;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a:nth-of-type(1) {
+  flex: 4;
+}
+header a:nth-of-type(1) img {
+  height: 4rem;
+  margin-left: 4rem;
+}
+header a:nth-of-type(2),
+header a:nth-of-type(3) {
+  flex: 1;
+}
+header a img {
+  height: 3.5rem;
+}
+nav {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #999;
+  text-indent: 2rem;
+  background-color: #ffffff;
+}
+nav a {
+  line-height: 4rem;
+  font-size: 1.4rem;
+  color: #444;
+}
+nav a:nth-of-type(1) {
+  font-weight: 600;
+  color: #222;
+}
+main {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+main .item1 {
+  width: 100%;
+  position: relative;
+}
+main .item1 img {
+  width: 100%;
+}
+main .item1 .fenxiang {
+  border: 1px solid #222;
+  position: absolute;
+  bottom: 10rem;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  line-height: 4rem;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  border-radius: 1rem 0 0 1rem;
+}
+main .item1 h2 {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+}
+main .item1 h2 p {
+  float: left;
+  width: 80%;
+  border-right: 1px solid #999;
+  font-size: 2rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+main .item1 h2 .guanzhu {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 4rem;
+  box-sizing: border-box;
+  background: url(../img/xin.png) no-repeat center 2rem;
+  background-size: 2rem;
+}
+main .item2 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #999;
+}
+main .item2 li {
+  flex: 1;
+  border-right: 1px solid #999;
+}
+main .item2 li span {
+  color: #ff8a00;
+  line-height: 3rem;
+}
+main .item2 li:nth-of-type(3) {
+  border: none;
+}
+main .item3 {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+main .item3 li {
+  font-size: 1.4rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #999;
+  display: flex;
+}
+main .item3 li span {
+  flex: 1;
+}
+main .item4 {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+main .item4 section {
+  border: 1px solid #999;
+  margin-top: 1rem;
+  background-color: #ffffff;
+}
+main .item4 section h2 {
+  font-size: 2.2rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #999;
+  text-indent: 1rem;
+  color: #ff8a00;
+  background: url(../img/right.png) no-repeat 33rem center;
+  background-size: 1rem;
+}
+main .item4 section p {
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+main .item4 section .map {
+  margin: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+main .item4 section .map h3 {
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+main .item4 section .map img {
+  width: 100%;
+}
+main .item5 {
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #ffffff;
+}
+main .item5 .man {
+  flex: 2;
+  font-size: 1.4rem;
+  text-indent: 1rem;
+}
+main .item5 .man img {
+  float: left;
+  height: 5rem;
+}
+main .item5 .phone {
+  flex: 1;
+  display: flex;
+}
+main .item5 .phone a {
+  flex: 1;
+  padding-top: 3.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ff8a00;
+}
+main .item5 .phone a:nth-of-type(1) {
+  background: url(../img/icon1.png) no-repeat center 0;
+  background-size: 3rem;
+  color: #5dcb96;
+}
+main .item5 .phone a:nth-of-type(2) {
+  background: url(../img/icon2.png) no-repeat center 0;
+  background-size: 3rem;
+  color: #5baede;
+}
+footer {
+  width: 100%;
+  background-color: #2f3130;
+  padding: 0 1rem;
+}
+footer h2 {
+  line-height: 4rem;
+  font-size: 1.6rem;
+  color: #b8b8b8;
+  border-bottom: 1px solid #3e403f;
+}
+footer .content {
+  text-align: center;
+  color: #939494;
+}
+footer .content ul {
+  display: flex;
+}
+footer .content ul li {
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  text-indent: 1rem;
+  color: #939494;
+}
+footer .content ul li img {
+  float: left;
+  width: 2rem;
+}
+footer .content .text {
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
